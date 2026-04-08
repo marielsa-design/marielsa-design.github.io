@@ -1,11 +1,3 @@
-/* Aplicación de estilos (styles.css):
-Aplica una tipografía legible y colores de fondo/texto que diferencien las secciones.
-Usa display, margin y padding para organizar los elementos con el modelo de caja.
-Agrega un hover a los enlaces para que cambien de color al pasar el mouse.
-Opcional: incluye una sombra en las imágenes y un borde redondeado.
-El límite es tu imaginación, si deseas agregar una nueva sección, un nuevo estilo, no hay ningún problema. */
-
-
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #747171;
+    background-color: rgb(184, 130, 66);
     color: #333;
     padding: 15px;
     display: flex;
@@ -57,9 +49,29 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    color: darkgoldenrod;
+    margin: 15px 20px;
+}
+
 p {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    color: rgb(184, 130, 66);
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 2px 3px 2px rgb(204, 191, 176);
+    display: block;
+    width: auto;
+    text-align: left;
+}
+
+.card {
+    width: 300px;
+    border: 2px solid gray;
+    margin: 25px 15px 25px 15px;
+    padding: 30px;
 }
 
 nav {
