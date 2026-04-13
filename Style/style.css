@@ -621,7 +621,7 @@ section {
 
 .form-textarea {
     resize: vertical;
-    min-height: 95px;
+    min-height: 92px;
     border-radius: 1rem;
 }
 

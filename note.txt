@@ -1,58 +1,78 @@
-<!-- </head>
+<!DOCTYPE html>
+<html lang="es">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="description" content="Pet supplies">
+<title>Pets Shop</title>
+<link rel="Stylesheet" href="Style/style.css">
+
+<header>
+    <h1>Pets Shop</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">privacy policy</a></li>
+        </ul>
+    </nav>
+</header>
+<br>
 
 <body>
-    <header>
-        <h1>Marielsa Parra</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h2>About</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis sint rerum cupiditate quos laborum ad
+        error optio vero aut nam. Dolorum, soluta odio tempora dolorem architecto amet cupiditate ratione perspiciatis?
+    </p>
     <br>
-
-    <body>
-        <main>
-            <h2>Hello, my name is Marielsa Parra</h2>
-            <p Card>I am a graphic designer with a strong interest in combining creativity and technology.
-                Currently, I am learning programming and development tools to create digital and visual projects.
-                <br>
-                <br>
-                My goal is to develop skills in animation, digital art, and creative web development.
-            </p>
-        </main>
-        <br>
-
-        <section>
-            <h2>Blog</h2>
-            <p Card> description
-            </p>
-        </section>
-        <br>
-        <section>
-            <h2>Projects</h2>
-        </section>
-        <p Card> description
-            <br>
-            <br>
-            <a href="mascotas.html">Pet Shop</a>
-        </p>
-        <br>
-
-        <footer>
-            <h2>Contact me</h2><br>
-            <a href="https://github.com/marielsa-design" </a>
-                <img src="img/github.png" alt="GitHub" width="50px>
-            <br>
-            <br>
-            <a href=" index.html"><br><br>Back to home</a>
-            <br>
-            <br>
-        </footer>
-    </body>
-
-</html> -->
+    <div class="photo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDhnu2ELwG6-2Ku27RPC4q9vXKyosz1qSfww&s"
+            img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDhnu2ELwG6-2Ku27RPC4q9vXKyosz1qSfww&s"
+            width="300">
+        <article>Lala, White Rabbit</article>
+        <details>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatem doloremque odit dolores modi,
+            ex error
+            veniam quidem omnis cupiditate, impedit aliquam mollitia quisquam consequatur quas ratione dolor expedita
+            ipsam.
+        </details>
+    </div>
+    <br>
+    <div class="photo">
+        <img src="https://assets.petscare.com/media/original_images/calico-cat-rosemary-plant-windowsill-50723.webp"
+            img="https://assets.petscare.com/media/original_images/calico-cat-rosemary-plant-windowsill-50723.webp"
+            img="https://assets.petscare.com/media/original_images/calico-cat-rosemary-plant-windowsill-50723.webp"
+            width="300">
+        <article>Luna, Brown and black Cat</article>
+        <details>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatem doloremque odit dolores modi,
+            ex error
+            veniam quidem omnis cupiditate, impedit aliquam mollitia quisquam consequatur quas ratione dolor expedita
+            ipsam.
+        </details>
+    </div>
+    <br>
+    <div class="photo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk7RMcvLMq_yi9JrXUHVDjliV2ZMiMYJtg3A&s"
+            img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk7RMcvLMq_yi9JrXUHVDjliV2ZMiMYJtg3A&s"
+            width="300">
+        <article>Camila, White Cat</article>
+        <details>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatem doloremque odit dolores modi,
+            ex error
+            veniam quidem omnis cupiditate, impedit aliquam mollitia quisquam consequatur quas ratione dolor expedita
+            ipsam.
+        </details>
+    </div>
+    <br>
+    <a>
+        <button>
+            <div class="text">
+                <a href="index.html">Back to home</a>
+                <span>Back</span>
+                <span>to</span>
+                <span>Home</span>
+            </div>
+        </button>
+    </a>
+</body>
+</html>
