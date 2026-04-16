@@ -89,8 +89,10 @@ li a:hover::before {
 }
 
 #menu-icon {
-    font-size: 2rem;
+    font-size: 1.8rem;
     display: none;
+    cursor: pointer;
+    color: var(--text-color);
 }
 
 main {
@@ -210,48 +212,6 @@ section {
 .sobre-mi-redes a:hover {
     transform: scale(1.15);
     color: #555;
-}
-
-/* Responsive */
-
-@media (max-width: 900px) {
-    .sobre-mi {
-        padding: 8rem 2rem 4rem;
-    }
-
-    .sobre-mi-container {
-        flex-direction: column;
-        gap: 2.5rem;
-        text-align: center;
-    }
-
-    .sobre-mi-botones {
-        justify-content: center;
-    }
-
-    .sobre-mi-redes {
-        justify-content: center;
-    }
-
-    .sobre-mi-img {
-        width: 260px;
-        height: 260px;
-    }
-
-    .sobre-mi-nombre {
-        font-size: 2.2rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .sobre-mi-img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .sobre-mi-nombre {
-        font-size: 1.8rem;
-    }
 }
 
 /* Section Experiencia */
@@ -379,29 +339,6 @@ section {
     color: #555;
 }
 
-/* Responsive */
-
-@media (max-width: 900px) {
-    .experiencia {
-        padding: 4rem 2rem;
-    }
-
-    .timeline-container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .experiencia {
-        padding: 3rem 1rem;
-    }
-
-    .timeline-line {
-        padding-left: 1.5rem;
-    }
-}
-
 /* Section Proyectos */
 
 .section-title {
@@ -490,28 +427,6 @@ section {
 .proyectos-card:hover .btn:hover {
     background-color: var(--background-color);
     color: var(--text-color);
-}
-
-/* Responsive */
-
-@media (max-width: 900px) {
-    .proyectos {
-        padding: 4rem 2rem;
-    }
-
-    .proyectos-card {
-        width: 260px;
-    }
-}
-
-@media (max-width: 600px) {
-    .proyectos {
-        padding: 3rem 1rem;
-    }
-
-    .proyectos-card {
-        width: 100%;
-    }
 }
 
 /* ── Contacto ── */
@@ -647,24 +562,6 @@ section {
     transform: scale(1.03);
 }
 
-/* Responsive */
-
-@media (max-width: 900px) {
-    .contacto {
-        padding: 4rem 2rem;
-    }
-
-    .contacto-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .contacto {
-        padding: 3rem 1rem;
-    }
-}
-
 /* Footer */
 
 .footer {
@@ -692,25 +589,6 @@ section {
 .proyectos-card:hover .btn:hover {
     background-color: var(--background-color);
     color: var(--text-color);
-}
-
-
-/* Responsive */
-
-@media (max-width: 800px) {
-    .proyectos {
-        padding: 4rem 2rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .proyectos {
-        padding: 3rem 1rem;
-    }
-
-    .proyectos-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* Footer */
@@ -760,4 +638,214 @@ section {
 
 .footer .right a span {
     margin-left: 0;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 1280px) {
+    header {
+        gap: 2rem;
+        padding: 0.5rem 2rem;
+    }
+
+    .sobre-mi {
+        padding: 8rem 3rem 5rem;
+    }
+
+    .sobre-mi-container {
+        gap: 3rem;
+    }
+
+    .sobre-mi-img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .experiencia {
+        padding: 5rem 3rem;
+    }
+
+    .proyectos {
+        padding: 5rem 3rem;
+    }
+
+    .contacto {
+        padding: 5rem 3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        gap: 1.5rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .sobre-mi {
+        padding: 8rem 2rem 4rem;
+    }
+
+    .sobre-mi-container {
+        flex-direction: column;
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .sobre-mi-img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .sobre-mi-nombre {
+        font-size: 2.2rem;
+    }
+
+    .sobre-mi-botones {
+        justify-content: center;
+    }
+
+    .sobre-mi-redes {
+        justify-content: center;
+    }
+
+    .experiencia {
+        padding: 4rem 2rem;
+    }
+
+    .timeline-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .proyectos {
+        padding: 4rem 2rem;
+    }
+
+    .proyectos-card {
+        width: 260px;
+    }
+
+    .contacto {
+        padding: 4rem 2rem;
+    }
+
+    .contacto-container {
+        grid-template-columns: 1fr;
+    }
+
+    .input-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 1.5rem 2rem;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer .right {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        gap: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(238, 239, 241, 0.95);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 1.5rem;
+        padding: 1.5rem 2rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        z-index: 999;
+        width: 90vw;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .sobre-mi-img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .sobre-mi-nombre {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .timeline-line {
+        padding-left: 1.5rem;
+    }
+
+    .proyectos-card {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre-mi-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .sobre-mi-nombre {
+        font-size: 1.8rem;
+    }
+
+    .sobre-mi-descripcion {
+        font-size: 0.95rem;
+    }
+
+    .btn-cv,
+    .btn-contacto {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .timeline-card {
+        padding: 1rem;
+    }
+
+    .contacto-card {
+        padding: 1rem;
+    }
 }
