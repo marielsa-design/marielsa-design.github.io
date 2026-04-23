@@ -4,6 +4,11 @@
 <html lang="es">
 
 <head>
+    <!-- Javascript -->
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +28,13 @@
 
     <title>Marielsa Parra</title>
     <link rel="icon" type="image/png" href="/public/img/tiger.png">
+
 </head>
 
-<!-- Menu de navegación de portafolio personal -->
-
 <body>
+
+    <!-- Menu de navegación de portafolio personal -->
+
     <header class="header">
         <a href="/" class="logo">Marielsa Design</a>
 
@@ -38,8 +45,11 @@
 
         <ul class="nav-links">
             <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="/views/mascotas.html">Mascotas</a></li>
+            <li><a href="#contacto" class="nav-btn">Contacto</a></li>
         </ul>
     </header>
 
@@ -77,6 +87,118 @@
             </div>
 
         </div>
+
+    </section>
+
+    <!-- seccion de Habilidades -->
+
+    <section id="habilidades" class="habilidades">
+
+        <h2 class="section-title">Habilidades</h2>
+
+        <div class="habilidades-container">
+
+            <!-- Columna izquierda: Lenguajes -->
+
+            <div class="habilidades-column">
+                <div class="habilidades-column-title">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Lenguaje de Código</h3>
+                </div>
+
+                <div class="skills-container">
+
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <i class='bx bxl-html5 skills-icon'></i>
+                            <span class="skills-name">HTML</span>
+                        </div>
+                        <span class="skills-percentage">65%</span>
+                        <div class="skills-bar" style="width: 65%;"></div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <i class='bx bxl-css3 skills-icon'></i>
+                            <span class="skills-name">CSS</span>
+                        </div>
+                        <span class="skills-percentage">60%</span>
+                        <div class="skills-bar" style="width: 60%;"></div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <i class='bx bxl-javascript skills-icon'></i>
+                            <span class="skills-name">Javascript</span>
+                        </div>
+                        <span class="skills-percentage">25%</span>
+                        <div class="skills-bar" style="width: 25%;"></div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <i class='bx bxl-python skills-icon'></i>
+                            <span class="skills-name">Python</span>
+                        </div>
+                        <span class="skills-percentage">25%</span>
+                        <div class="skills-bar" style="width: 25%;"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Columna derecha: Programas de Diseño -->
+            <div class="habilidades-column">
+                <div class="habilidades-column-title">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h3>Programas</h3>
+                </div>
+
+                <div class="badges-container">
+
+                    <div class="badge-card">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                        <span>Procreate</span>
+                    </div>
+
+                    <div class="badge-card">
+                        <i class="fa-solid fa-bezier-curve"></i>
+                        <span>Adobe Illustrator</span>
+                    </div>
+
+                    <div class="badge-card">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <span>Clip Studio Paint</span>
+                    </div>
+
+                    <div class="badge-card">
+                        <i class="fa-solid fa-image"></i>
+                        <span>Adobe Photoshop</span>
+                    </div>
+
+                    <div class="badge-card">
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <span>Toon Boom Harmony</span>
+                    </div>
+
+                    <div class="badge-card">
+                        <i class="fa-solid fa-vector-square"></i>
+                        <span>Figma</span>
+                    </div>
+
+                    <div class="badge-card">
+                        <i class="fa-solid fa-file-code"></i>
+                        <span>Visual Studio Code</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    </div>
 
     </section>
 
@@ -218,8 +340,8 @@
 
             <div class="proyectos-card">
                 <img src="/public/img/tiger.png" alt="PawAdopt">
-                <h3>Open Bullet</h3>
-                <p>Creación de la página del galeria de la tiendas de productos de mascotas.</p>
+                <h3>PawAdopt</h3>
+                <p>Creación de la página del galeria de adopción.</p>
                 <div class="btn-group">
                     <a href="/src/views/mascotas.html" class="btn">Ver proyecto</a>
                     <a href="https://github.com/marielsa-design/portafolio" class="btn">Código de fuente</a>
@@ -326,6 +448,26 @@
             </a>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '60px',
+            duration: 1500,
+            reset: false
+        });
+
+        sr.reveal('.section-title', { delay: 100 });
+        sr.reveal('.sobre-mi-img', { origin: 'left', delay: 200 });
+        sr.reveal('.sobre-mi-texto', { origin: 'right', delay: 300 });
+        sr.reveal('.skills-data', { interval: 150 });
+        sr.reveal('.badge-card', { interval: 100 });
+        sr.reveal('.timeline-card', { interval: 150 });
+        sr.reveal('.proyectos-card', { interval: 200 });
+        sr.reveal('.contacto-card', { interval: 150 });
+        sr.reveal('.contacto-form', { origin: 'right', delay: 200 });
+    </script>
 
 </body>
 
