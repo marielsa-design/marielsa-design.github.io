@@ -1,3 +1,5 @@
+/* ── Global ── */
+
 :root {
   --ob-cream: #FFF8F0;
   --ob-warm: #FDF3E3;
@@ -5,7 +7,18 @@
   --ob-gold: #F5A623;
   --ob-dark: #1A1209;
   --ob-muted: #7A6B5A;
+  --text-color: #1A1209;
+  --background-color: #ffffff;
 }
+
+/* ── Tipografía ── */
+
+* {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+/* ── Header ── */
+/* ── Sobre mi ── */
 
 .shop {
   padding: 6rem 8%;
@@ -32,7 +45,7 @@
 .shop-img {
   width: 100%;
   height: 100%;
-  min-height: 420px;
+  min-height: 300px;
   object-fit: cover;
   display: block;
   border-radius: 24px;
@@ -59,7 +72,7 @@
 }
 
 .shop-titulo {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lexend Deca', serif;
   font-size: clamp(1.9rem, 3vw, 2.7rem);
   font-weight: 900;
   line-height: 1.2;
@@ -82,7 +95,7 @@
   margin-top: 0.5rem;
 }
 
-.btn-contacto {
+.btn-cv {
   display: inline-block;
   padding: 0.85rem 2rem;
   border: 1.5px solid #D4622A;
@@ -94,13 +107,13 @@
   transition: all 0.2s;
 }
 
-.btn-contacto:hover {
+.btn-cv:hover {
   background: #D4622A;
   color: #ffffff;
   transform: translateY(-2px);
 }
 
-/* Responsive */
+/* ── Responsive ── */
 
 @media (max-width: 860px) {
   .shop-container {
@@ -117,7 +130,8 @@
   }
 }
 
-/* menu de navegador */
+/* ── Menu de navegador ── */
+/* ── Sección ── */
 
 header.header {
   background: #D4622A;
@@ -133,7 +147,7 @@ header.header {
 
 .logo {
   text-decoration: none;
-  font-family: Georgia, serif;
+  font-family: 'Lexend Deca', serif;
   font-size: 1.2rem;
   font-weight: 700;
   color: #ffffff;
@@ -155,7 +169,7 @@ ul.nav-links a {
   display: block;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.85);
-  font-family: Arial, sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
   padding: 7px 13px;
@@ -168,27 +182,29 @@ ul.nav-links a:hover {
   color: #ffffff;
 }
 
-.btn-signup {
+.btn-contact {
   padding: 8px 18px;
   background: #FFD08A;
   color: #7A2E00;
   border-radius: 7px;
-  font-family: Arial, sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
   text-decoration: none;
   transition: background 0.15s, color 0.15s;
 }
 
-.btn-signup:hover {
+.btn-contact:hover {
   background: #ffffff;
   color: #D4622A;
 }
 
-/* ── SECCIÓN SERVICES ── */
+/* ── Servicio ── */
+/* ── Sección ── */
+
 .services {
   padding: 4rem 5%;
-  font-family: Arial, sans-serif;
+  background: #F5F0EB;
   text-align: center;
 }
 
@@ -207,30 +223,31 @@ ul.nav-links a:hover {
   line-height: 1.7;
 }
 
-/* ── GRID 3 COLUMNAS ── */
+/* ── Grid 3 Columnas ── */
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
-/* ── CARD ── */
+/* ── Carta ── */
+
 .service-card {
   background: #fff;
   border-radius: 20px;
   padding: 2rem 1.75rem;
   text-align: left;
-  transition: transform 0.3s;
-  border-color: var(--ob-gold);
-  border: solid #fdebd1 ;
-  box-shadow: var(--ob-warm);
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  transition: transform 0.2s;
 }
 
 .service-card:hover {
   transform: translateY(-4px);
 }
 
-/* ── ÍCONO ── */
+/* ── ícono ── */
+
 .service-icon {
   width: 52px;
   height: 52px;
@@ -242,32 +259,18 @@ ul.nav-links a:hover {
   margin-bottom: 1.75rem;
 }
 
-/* ── TEXTO ── */
-.service-card h3 {
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: #1A1209;
-  margin-bottom: 0.75rem;
+.service-icon i {
+  font-size: 1.4rem;
+  color: #9B5E1E;
 }
 
-.service-card p {
-  font-size: 0.88rem;
-  color: #7A6B5A;
-  line-height: 1.75;
-}
+/* ── Galeria/Tienda ── */
+/* ── Sección ── */
 
-/* ── RESPONSIVE ── */
-@media (max-width: 768px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ── SECCIÓN ── */
 .gallery {
   padding: 3rem 5%;
   background: #F5F0EB;
-  font-family: Arial, sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 .gallery-header {
@@ -292,7 +295,7 @@ ul.nav-links a:hover {
   gap: 1.25rem;
 }
 
-/* ── CARD ── */
+/* ── Carta ── */
 
 .card {
   background: #fff;
@@ -359,212 +362,348 @@ ul.nav-links a:hover {
 }
 
 /* ── Contacto ── */
+/* ── Sección ── */
 
-.contacto {
-    padding: 5rem 6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h2.section-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1A1209;
 }
 
-.contacto-container {
+.contact {
+  padding: 5rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container {
+  display: grid;
+  padding: 35px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* ── Tarjetas ── */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.4rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-card i {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 0.3rem;
+}
+
+.contact-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.contact-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ob-accent);
+  margin-top: 0.4rem;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+  gap: 0.8rem;
+}
+
+/* ── Formulario ── */
+/* ── Sección ── */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1rem;
+  color: var(--text-color);
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+.form-input:focus {
+  border: 1px solid var(--text-color);
+  box-shadow: 0 0 0 3px rgba(26, 28, 32, 0.08);
+}
+
+.form-input::placeholder {
+  color: #aaa;
+  padding-left: 0.5rem;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 92px;
+  border-radius: 1rem;
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  border: none;
+  background-color: var(--ob-accent);
+  color: var(--background-color);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.form-btn:hover {
+  background-color: var(--ob-gold);
+  transform: scale(1.03);
+}
+
+/* ── Footer ── */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer .left a {
+  color: var(--ob-accent);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer .left span {
+  font-size: 0.85rem;
+  color: var(--ob-muted);
+}
+
+.footer .right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer .right a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--ob-accent);
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: 0.3s ease-in-out;
+}
+
+.footer .right a:hover {
+  background-color: var(--ob-accent);
+  color: var(--background-color);
+}
+
+.footer .right a span {
+  margin-left: 0;
+}
+
+/* ── Responsive ── */
+
+/* ── Tablet (≤ 1024px) ── */
+
+@media (max-width: 1024px) {
+
+  /* Header */
+
+  header.header {
+    padding: 0 24px;
+  }
+
+  /* Shop */
+
+  .shop {
+    padding: 4rem 5%;
+  }
+
+  /* Services */
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Gallery */
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+
+  .contact-container {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 3rem;
     width: 100%;
     max-width: 1000px;
+    margin: 0 auto;
+    padding: 35px;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding: 0 24px;
+  }
 }
 
-/* Tarjetas */
+/* ── Móvil (≤ 768px) ── */
 
-.contacto-info {
-    display: flex;
+@media (max-width: 768px) {
+
+  /* Header: oculta links, solo logo + btn */
+
+  ul.nav-links {
+    display: none;
+  }
+
+  header.header {
+    padding: 0 16px;
+  }
+
+  /* Shop: columna única */
+
+  .shop-container {
+    grid-template-columns: 1fr;
+  }
+
+  .shop {
+    padding: 3rem 5%;
+  }
+
+  .shop-img,
+  .shop-img-wrap {
+    min-height: 280px;
+  }
+
+  .shop-titulo {
+    font-size: 1.7rem;
+  }
+
+  /* Services: columna única */
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-title {
+    font-size: 1.7rem;
+  }
+
+  /* Gallery: columna única */
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-header h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Contact */
+  .contact {
+    padding: 3rem 5%;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+
+  .footer {
     flex-direction: column;
-    gap: 1.5rem;
-}
-
-.contacto-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.4rem;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    background-color: #ffffff;
-    transition: 0.3s ease-in-out;
-}
-
-.contacto-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
-
-.contacto-card i {
-    font-size: 1.8rem;
-    color: var(--text-color);
-    margin-bottom: 0.3rem;
-}
-
-.contacto-card h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text-color);
-}
-
-.contacto-card p {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.contacto-link {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--link-color);
-    margin-top: 0.4rem;
-    transition: 0.3s ease-in-out;
-}
-
-.contacto-link:hover {
-    gap: 0.8rem;
-}
-
-/* Formulario */
-
-.contacto-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
-.form-input {
-    width: 100%;
-    padding: 1rem 1.5rem;
-    border-radius: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    background-color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    color: var(--text-color);
-    outline: none;
-    transition: 0.3s ease-in-out;
-}
-
-.form-input:focus {
-    border: 1px solid var(--text-color);
-    box-shadow: 0 0 0 3px rgba(26, 28, 32, 0.08);
-}
-
-.form-input::placeholder {
-    color: #aaa;
-}
-
-.form-textarea {
-    resize: vertical;
-    min-height: 92px;
-    border-radius: 1rem;
-}
-
-.form-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.6rem;
-    padding: 1rem 2rem;
-    border-radius: 3rem;
-    border: none;
-    background-color: var(--text-color);
-    color: var(--background-color);
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-.form-btn:hover {
-    background-color: var(--ob-gold);
-    transform: scale(1.03);
-}
-
-/* Footer */
-
-.footer {
-    display: flex;
+    height: auto;
+    padding: 1.5rem 5%;
     gap: 1rem;
+    text-align: center;
+  }
+
+  .footer .right {
     flex-wrap: wrap;
     justify-content: center;
+  }
 }
 
-.btn {
-    padding: 0.6rem 1.4rem;
-    border-radius: 3rem;
-    border: 2px solid var(--text-color);
-    color: var(--text-color);
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: 0.3s ease-in-out;
-}
+/* ── Móvil pequeño (≤ 480px) ── */
 
-.proyectos-card:hover .btn {
-    border: 2px solid var(--background-color);
-    color: var(--background-color);
-}
+@media (max-width: 480px) {
 
-.proyectos-card:hover .btn:hover {
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
+  .shop-titulo {
+    font-size: 1.4rem;
+  }
 
-/* Footer */
+  .services-title,
+  .gallery-header h2 {
+    font-size: 1.4rem;
+  }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    height: 80px;
-    margin-top: auto;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
+  .btn-contact {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
 
-.footer .left a {
-    color: var(--text-color);
-    font-size: 1.1rem;
-    font-weight: 600;
-}
+  .card img {
+    height: 220px;
+  }
 
-.footer .left span {
-    font-size: 0.85rem;
-    color: #666;
-}
-
-.footer .right {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.footer .right a {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    color: var(--text-color);
-    padding: 5px 12px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    transition: 0.3s ease-in-out;
-}
-
-.footer .right a:hover {
-    background-color: var(--text-color);
-    color: var(--background-color);
-}
-
-.footer .right a span {
-    margin-left: 0;
+  .form-btn {
+    width: 100%;
+  }
 }

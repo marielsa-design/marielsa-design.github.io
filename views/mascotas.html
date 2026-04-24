@@ -16,6 +16,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
 
+
     <link rel="stylesheet" href="/src/css/mascotas.css">
 
     <!-- Titulo de la página del la pagina de mascotas -->
@@ -29,18 +30,17 @@
 <body>
 
     <header class="header">
-        <a href="/" class="logo">
+        <a href="/views/mascotas.html" class="logo">
             Paw<span>Adopt</span>
         </a>
 
         <ul class="nav-links">
-            <li><a href="#shop">Find Pets</a></li>
-            <li><a href="#services">Adoption Process</a></li>
-            <li><a href="#supplies">Our Mission</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#shop">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
         </ul>
 
-        <a href="#signup" class="btn-signup">Sign up</a>
+        <a href="#contact" class="btn-contact">Contact</a>
 
     </header>
 
@@ -65,8 +65,7 @@
                     editorial storytelling.
                 </p>
                 <div class="shop-botones">
-                    <a href="#contacto" class="btn-contacto">Find your companion</a>
-                    <a href="#contacto" class="btn-contacto">learn our process</a>
+                    <a href="#contact" class="btn-cv">learn our process</a>
                 </div>
             </div>
 
@@ -91,7 +90,7 @@
             <!-- Card 1 -->
             <div class="service-card">
                 <div class="service-icon">
-                    <i class="fa-solid fa-shield-dog"></i>
+                    <i class="ri-heart-pulse-line"></i>
                 </div>
                 <h3>Pet Wellness & Care</h3>
                 <p>
@@ -104,7 +103,7 @@
             <!-- Card 2 -->
             <div class="service-card">
                 <div class="service-icon">
-                    <i class="fa-solid fa-paw"></i>
+                    <i class="ri-bear-smile-line"></i>
                 </div>
                 <h3>Behavioral Coaching</h3>
                 <p>
@@ -117,7 +116,7 @@
             <!-- Card 3 -->
             <div class="service-card">
                 <div class="service-icon">
-                    <i class="fa-solid fa-bone"></i>
+                    <i class="ri-customer-service-2-line"></i>
                 </div>
                 <h3>Lifetime Support</h3>
                 <p>
@@ -201,77 +200,79 @@
 
     <!-- Contacto -->
 
-    <section id="contacto" class="contacto">
+    <section id="contact" class="contact">
 
         <h2 class="section-title">Contacto</h2>
 
-        <div class="contacto-container">
+        <div class="contact-container">
 
             <!-- Tarjetas de contacto izquierda -->
 
-            <div class="contacto-info">
+            <div class="contact-info">
 
-                <div class="contacto-card">
-                    <i class="fa-solid fa-envelope"></i>
-                    <h3>Correo</h3>
-                    <p>marielsa.milagro@gmail.com</p>
-                    <a href="mailto:marielsa.milagro@gmail.com" class="contacto-link">
-                        Escribeme <i class="fa-solid fa-arrow-right"></i>
+                <div class="contact-card">
+                    <i class="ri-mail-fill"></i>
+                    <h3>Email</h3>
+                    <p>pawadopt@gmail.com</p>
+                    <a href="mailto:pawadopt@gmail.com" class="contact-link">
+                        Write to me <i class="ri-arrow-right-long-line"></i>
                     </a>
                 </div>
 
-                <div class="contacto-card">
-                    <i class="fa-brands fa-whatsapp"></i>
+                <div class="contact-card">
+                    <i class="ri-whatsapp-fill"></i>
                     <h3>WhatsApp</h3>
-                    <p>+57 322 7111205</p>
-                    <a href="https://wa.me/573227111205" target="_blank" rel="noopener noreferrer"
-                        class="contacto-link">
-                        Escribeme <i class="fa-solid fa-arrow-right"></i>
+                    <p>+57 300 123 4567</p>
+                    <a href="https://wa.me/573001234567" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        Write to me <i class="ri-arrow-right-long-line"></i>
                     </a>
                 </div>
             </div>
 
             <!-- Formulario derecha -->
 
-            <div class="contacto-form">
+            <div class="contact-form">
 
-                <input type="text" class="form-input" placeholder="Nombre completo">
-                <input type="email" class="form-input" placeholder="Correo electrónico">
-                <input type="tel" class="form-input" placeholder="Número de teléfono">
-                <textarea class="form-input form-textarea" placeholder="Tu mensaje"></textarea>
+                <input type="text" class="form-input" placeholder="Full Name">
+                <input type="email" class="form-input" placeholder="Email">
+                <input type="tel" class="form-input" placeholder="Phone number">
+                <textarea class="form-input form-textarea" placeholder="Your message"></textarea>
 
                 <button class="form-btn">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <span>Enviar mensaje</span>
+                    <i class="ri-send-plane-line"></i>
+                    <span>Send messages</span>
                 </button>
 
             </div>
 
         </div>
-
     </section>
 
     <!-- Footer de la página del portafolio personal -->
 
     <footer class="footer">
         <div class="left">
-            <a href="/">PawAdopt</a><br>
+            <a href="/views/mascotas.html">PawAdopt</a><br>
             <span>&copy; 2026 PawAdopt | All rights reserved.</span>
+        </div>
+
+        <div class="left">
+            <a href="/index.html">Back to the portfolio</a>
         </div>
 
         <div class="right">
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-instagram"></i>
+                <i class="ri-instagram-line"></i>
                 <span>Instagram</span>
             </a>
 
             <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-pinterest"></i>
+                <i class="ri-pinterest-line"></i>
                 <span>Pinterest</span>
             </a>
 
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-twitter"></i>
+                <i class="ri-twitter-x-line"></i>
                 <span>Twitter</span>
             </a>
         </div>

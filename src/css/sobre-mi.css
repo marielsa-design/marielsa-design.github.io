@@ -1,0 +1,109 @@
+@import url(style.css);
+
+/* ── Sobre mi ── */
+
+.sobre-mi {
+    padding: 8rem 6rem 5rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.sobre-mi-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sobre-mi-img {
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.sobre-mi-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+}
+
+.sobre-mi-saludo {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.sobre-mi-nombre {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
+}
+
+.sobre-mi-descripcion {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.sobre-mi-botones {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-cv {
+    padding: 0.75rem 1.8rem;
+    border-radius: 3rem;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-cv:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.btn-contacto {
+    padding: 0.75rem 1.8rem;
+    border-radius: 3rem;
+    border: 2px solid var(--text-color);
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-contacto:hover {
+    background-color: #3a3a3a;
+    border-color: #3a3a3a;
+}
+
+.sobre-mi-redes {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.sobre-mi-redes a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    transition: 0.3s ease-in-out;
+}
+
+.sobre-mi-redes a:hover {
+    transform: scale(1.15);
+    color: #555;
+}

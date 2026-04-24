@@ -1,0 +1,79 @@
+@import url(style.css);
+
+/* ── Footer ── */
+
+.footer {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0.6rem 1.4rem;
+    border-radius: 3rem;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.proyectos-card:hover .btn {
+    border: 2px solid var(--background-color);
+    color: var(--background-color);
+}
+
+.proyectos-card:hover .btn:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* ── Footer ── */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+    margin-top: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer .left a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.footer .left span {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.footer .right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer .right a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text-color);
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .right a:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.footer .right a span {
+    margin-left: 0;
+}

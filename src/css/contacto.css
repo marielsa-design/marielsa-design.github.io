@@ -1,0 +1,134 @@
+@import url(style.css);
+
+/* ── Contacto ── */
+
+.contacto {
+    padding: 5rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* ── Tarjetas ── */
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contacto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.4rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+.contacto-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contacto-card i {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 0.3rem;
+}
+
+.contacto-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.contacto-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.contacto-link {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--link-color);
+    margin-top: 0.4rem;
+    transition: 0.3s ease-in-out;
+}
+
+.contacto-link:hover {
+    gap: 0.8rem;
+}
+
+/* ── Formulario ── */
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--text-color);
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.form-input:focus {
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0 0 3px rgba(26, 28, 32, 0.08);
+}
+
+.form-input::placeholder {
+    color: #aaa;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 92px;
+    border-radius: 1rem;
+}
+
+.form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.form-btn:hover {
+    background-color: #3a3a3a;
+    transform: scale(1.03);
+}

@@ -1,3 +1,5 @@
+/* ── Global ── */
+
 :root {
     --text-color: #5c4033;
     --link-color: #a0785a;
@@ -128,7 +130,7 @@ section {
     position: relative;
 }
 
-/* ── Sobre mí ── */
+/* ── Sobre mi ── */
 
 .sobre-mi {
     padding: 8rem 6rem 5rem;
@@ -270,7 +272,7 @@ section {
     color: var(--text-color);
 }
 
-/* Barras de habilidades */
+/* ── Barras de habilidades ── */
 
 .skills-container {
     display: flex;
@@ -328,7 +330,7 @@ section {
     border-radius: 0 0 0.8rem 0;
 }
 
-/* Badges de diseño */
+/* ── Badges de diseño ── */
 
 .badges-container {
     display: flex;
@@ -363,7 +365,7 @@ section {
     font-size: 1rem;
 }
 
-/* Responsive */
+/* ── Responsive ── */
 
 @media (max-width: 900px) {
     .habilidades {
@@ -490,7 +492,7 @@ section {
     color: #555;
 }
 
-/* Section Proyectos */
+/* ── Section Proyectos ── */
 
 .section-title {
     text-align: center;
@@ -501,7 +503,7 @@ section {
     color: var(--text-color);
 }
 
-/* Proyectos */
+/* ── Proyectos ── */
 
 .proyectos {
     padding: 5rem 6rem;
@@ -610,7 +612,7 @@ section {
     max-width: 1000px;
 }
 
-/* Tarjetas */
+/* ── Tarjetas ── */
 
 .contacto-info {
     display: flex;
@@ -668,7 +670,7 @@ section {
     gap: 0.8rem;
 }
 
-/* Formulario */
+/* ── Formulario ── */
 
 .contacto-form {
     display: flex;
@@ -726,7 +728,7 @@ section {
     transform: scale(1.03);
 }
 
-/* Footer */
+/* ── Footer ── */
 
 .footer {
     display: flex;
@@ -755,7 +757,7 @@ section {
     color: var(--text-color);
 }
 
-/* Footer */
+/* ── Footer ── */
 
 .footer {
     display: flex;

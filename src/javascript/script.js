@@ -1,3 +1,5 @@
+// Animación //
+
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',

@@ -1,0 +1,104 @@
+@import url(style.css);
+
+/* ── Section Proyectos ── */
+
+.section-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    width: 100%;
+    color: var(--text-color);
+}
+
+/* ── Proyectos ── */
+
+.proyectos {
+    padding: 5rem 6rem;
+    text-align: center;
+}
+
+.proyectos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.proyectos-card {
+    width: 300px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(92, 64, 51, 0.08);
+}
+
+.proyectos-card:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(92, 64, 51, 0.25);
+}
+
+.proyectos-card img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.proyectos-card h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.proyectos-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.6rem 1.4rem;
+    border-radius: 3rem;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    width: fit-content;
+}
+
+.proyectos-card:hover .btn {
+    border: 2px solid var(--background-color);
+    color: var(--background-color);
+}
+
+.proyectos-card:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    transform: translateY(-10px) scale(1.02);
+}
+
+.proyectos-card:hover p {
+    color: var(--background-color);
+}
+
+.proyectos-card:hover h3 {
+    color: var(--background-color);
+}
