@@ -29,7 +29,26 @@ a {
     text-decoration: none;
 }
 
-/* Header */
+main {
+    flex: 1;
+    padding-top: 6rem;
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    width: 100%;
+    color: var(--text-color);
+}
+
+/* ── Header ── */
 
 header {
     position: fixed;
@@ -120,21 +139,11 @@ li a:hover::before {
     color: var(--text-color);
 }
 
-main {
-    flex: 1;
-    padding-top: 100px;
-}
-
-section {
-    width: 100%;
-    position: relative;
-}
-
-/* ── Sobre mi ── */
+/* ── Sobre mí ── */
 
 .sobre-mi {
-    padding: 8rem 6rem 5rem;
-    min-height: 100vh;
+    padding: 4rem 6rem 3rem;
+    min-height: auto;
     display: flex;
     align-items: center;
 }
@@ -241,7 +250,7 @@ section {
 /* ── Habilidades ── */
 
 .habilidades {
-    padding: 5rem 6rem;
+    padding: 3rem 6rem 5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -271,8 +280,6 @@ section {
     font-weight: 600;
     color: var(--text-color);
 }
-
-/* ── Barras de habilidades ── */
 
 .skills-container {
     display: flex;
@@ -330,8 +337,6 @@ section {
     border-radius: 0 0 0.8rem 0;
 }
 
-/* ── Badges de diseño ── */
-
 .badges-container {
     display: flex;
     flex-wrap: wrap;
@@ -363,30 +368,6 @@ section {
 
 .badge-card i {
     font-size: 1rem;
-}
-
-/* ── Responsive ── */
-
-@media (max-width: 900px) {
-    .habilidades {
-        padding: 4rem 2rem;
-    }
-
-    .habilidades-container {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .habilidades {
-        padding: 3rem 1rem;
-    }
-
-    .badge-card {
-        font-size: 0.85rem;
-        padding: 0.6rem 1rem;
-    }
 }
 
 /* ── Experiencia / Timeline ── */
@@ -462,7 +443,7 @@ section {
 
 .timeline-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 20px rgba(92, 64, 51, 0.15);
 }
 
 .timeline-date {
@@ -490,17 +471,6 @@ section {
     font-size: 0.9rem;
     line-height: 1.6;
     color: #555;
-}
-
-/* ── Section Proyectos ── */
-
-.section-title {
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 600;
-    margin-bottom: 3rem;
-    width: 100%;
-    color: var(--text-color);
 }
 
 /* ── Proyectos ── */
@@ -581,12 +551,6 @@ section {
     color: var(--background-color);
 }
 
-.proyectos-card:hover {
-    background-color: var(--text-color);
-    color: var(--background-color);
-    transform: translateY(-10px) scale(1.02);
-}
-
 .proyectos-card:hover p {
     color: var(--background-color);
 }
@@ -612,8 +576,6 @@ section {
     max-width: 1000px;
 }
 
-/* ── Tarjetas ── */
-
 .contacto-info {
     display: flex;
     flex-direction: column;
@@ -635,7 +597,7 @@ section {
 
 .contacto-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 20px rgba(92, 64, 51, 0.15);
 }
 
 .contacto-card i {
@@ -670,8 +632,6 @@ section {
     gap: 0.8rem;
 }
 
-/* ── Formulario ── */
-
 .contacto-form {
     display: flex;
     flex-direction: column;
@@ -693,7 +653,7 @@ section {
 
 .form-input:focus {
     border: 1px solid var(--text-color);
-    box-shadow: 0 0 0 3px rgba(26, 28, 32, 0.08);
+    box-shadow: 0 0 0 3px rgba(92, 64, 51, 0.08);
 }
 
 .form-input::placeholder {
@@ -726,35 +686,6 @@ section {
 .form-btn:hover {
     background-color: #3a3a3a;
     transform: scale(1.03);
-}
-
-/* ── Footer ── */
-
-.footer {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.btn {
-    padding: 0.6rem 1.4rem;
-    border-radius: 3rem;
-    border: 2px solid var(--text-color);
-    color: var(--text-color);
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: 0.3s ease-in-out;
-}
-
-.proyectos-card:hover .btn {
-    border: 2px solid var(--background-color);
-    color: var(--background-color);
-}
-
-.proyectos-card:hover .btn:hover {
-    background-color: var(--background-color);
-    color: var(--text-color);
 }
 
 /* ── Footer ── */
@@ -815,7 +746,7 @@ section {
     }
 
     .sobre-mi {
-        padding: 8rem 3rem 5rem;
+        padding: 4rem 3rem 3rem;
     }
 
     .sobre-mi-container {
@@ -847,7 +778,7 @@ section {
     }
 
     .sobre-mi {
-        padding: 8rem 2rem 4rem;
+        padding: 4rem 2rem 3rem;
     }
 
     .sobre-mi-container {
@@ -898,10 +829,6 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .input-wrapper {
-        grid-template-columns: 1fr;
-    }
-
     .footer {
         flex-direction: column;
         height: auto;
@@ -940,10 +867,6 @@ section {
 
     .menu-toggle:checked~.nav-links {
         display: flex;
-    }
-
-    .menu-toggle:checked~.menu-icon .fa-bars::before {
-        content: "\f00d";
     }
 
     .sobre-mi-img {

@@ -13,10 +13,9 @@
 
 /* ── Tipografía ── */
 
-* {
-  font-family: 'Lexend Deca', sans-serif;
+.mascotas-page * {
+    font-family: 'Lexend Deca', sans-serif;
 }
-
 /* ── Header ── */
 /* ── Sobre mi ── */
 

@@ -1,14 +1,9 @@
-<!--TAREA: Creación de portafolio personal con página de mascotas-->
+<!--Creación de portafolio personal con página de mascotas-->
 
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <!-- Javascript -->
-
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/scrollreveal"></script>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,17 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="/src/css/style.css">
+    
+        <link rel="stylesheet" href="/src/css/style.css">
 
     <!-- Titulo de la página del portafolio personal -->
 
     <title>Marielsa Parra</title>
     <link rel="icon" type="image/png" href="/public/img/tiger.png">
-
 </head>
 
 <body>
@@ -53,376 +47,376 @@
         </ul>
     </header>
 
-    <!-- Section de Sobre Mí -->
+    <main>
 
-    <section id="sobre-mi" class="sobre-mi">
+        <!-- Section de Sobre Mí -->
 
-        <div class="sobre-mi-container">
+        <section id="sobre-mi" class="sobre-mi">
 
-            <img src="/public/img/foto.jpg" alt="Marielsa Parra" class="sobre-mi-img">
+            <div class="sobre-mi-container">
 
-            <div class="sobre-mi-texto">
-                <p class="sobre-mi-saludo">Hola!</p>
-                <h1 class="sobre-mi-nombre">Soy Marielsa Parra</h1>
-                <p class="sobre-mi-descripcion">Diseñadora gráfica e ilustradora apasionada por la creatividad y la
-                    tecnología. Con formación en programación y desarrollo web e interés en animación 2D y arte digital.
-                </p>
+                <img src="/public/img/foto.jpg" alt="Marielsa Parra" class="sobre-mi-img">
 
-                <div class="sobre-mi-botones">
-                    <a href="cv/marielsa-cv.pdf" download class="btn-cv">Descargar CV</a>
-                    <a href="#contacto" class="btn-contacto">Contacto</a>
+                <div class="sobre-mi-texto">
+                    <p class="sobre-mi-saludo">Hola!</p>
+                    <h1 class="sobre-mi-nombre">Soy Marielsa Parra</h1>
+                    <p class="sobre-mi-descripcion">Diseñadora gráfica e ilustradora apasionada por la creatividad y la
+                        tecnología. Con formación en programación y desarrollo web e interés en animación 2D y arte
+                        digital.
+                    </p>
+
+                    <div class="sobre-mi-botones">
+                        <a href="cv/marielsa-cv.pdf" download class="btn-cv">Descargar CV</a>
+                        <a href="#contacto" class="btn-contacto">Contacto</a>
+                    </div>
+
+                    <div class="sobre-mi-redes">
+                        <a href="https://github.com/marielsa-design" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/marielsa-parra/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.behance.net/marielsamilagro" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-behance"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="sobre-mi-redes">
-                    <a href="https://github.com/marielsa-design" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/marielsa-parra/" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.behance.net/marielsamilagro" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-behance"></i>
-                    </a>
-                </div>
             </div>
 
-        </div>
+        </section>
 
-    </section>
+        <!-- seccion de Habilidades -->
 
-    <!-- seccion de Habilidades -->
+        <section id="habilidades" class="habilidades">
 
-    <section id="habilidades" class="habilidades">
+            <h2 class="section-title">Habilidades</h2>
 
-        <h2 class="section-title">Habilidades</h2>
+            <div class="habilidades-container">
 
-        <div class="habilidades-container">
+                <!-- Columna izquierda: Lenguajes -->
 
-            <!-- Columna izquierda: Lenguajes -->
+                <div class="habilidades-column">
+                    <div class="habilidades-column-title">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Lenguaje de Código</h3>
+                    </div>
 
-            <div class="habilidades-column">
-                <div class="habilidades-column-title">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Lenguaje de Código</h3>
+                    <div class="skills-container">
+
+                        <div class="skills-data">
+                            <div class="skills-names">
+                                <i class='bx bxl-html5 skills-icon'></i>
+                                <span class="skills-name">HTML</span>
+                            </div>
+                            <span class="skills-percentage">65%</span>
+                            <div class="skills-bar" style="width: 65%;"></div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-names">
+                                <i class='bx bxl-css3 skills-icon'></i>
+                                <span class="skills-name">CSS</span>
+                            </div>
+                            <span class="skills-percentage">60%</span>
+                            <div class="skills-bar" style="width: 60%;"></div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-names">
+                                <i class='bx bxl-javascript skills-icon'></i>
+                                <span class="skills-name">Javascript</span>
+                            </div>
+                            <span class="skills-percentage">25%</span>
+                            <div class="skills-bar" style="width: 25%;"></div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-names">
+                                <i class='bx bxl-python skills-icon'></i>
+                                <span class="skills-name">Python</span>
+                            </div>
+                            <span class="skills-percentage">25%</span>
+                            <div class="skills-bar" style="width: 25%;"></div>
+                        </div>
+
+                    </div>
                 </div>
 
-                <div class="skills-container">
-
-                    <div class="skills-data">
-                        <div class="skills-names">
-                            <i class='bx bxl-html5 skills-icon'></i>
-                            <span class="skills-name">HTML</span>
-                        </div>
-                        <span class="skills-percentage">65%</span>
-                        <div class="skills-bar" style="width: 65%;"></div>
-                    </div>
-
-                    <div class="skills-data">
-                        <div class="skills-names">
-                            <i class='bx bxl-css3 skills-icon'></i>
-                            <span class="skills-name">CSS</span>
-                        </div>
-                        <span class="skills-percentage">60%</span>
-                        <div class="skills-bar" style="width: 60%;"></div>
-                    </div>
-
-                    <div class="skills-data">
-                        <div class="skills-names">
-                            <i class='bx bxl-javascript skills-icon'></i>
-                            <span class="skills-name">Javascript</span>
-                        </div>
-                        <span class="skills-percentage">25%</span>
-                        <div class="skills-bar" style="width: 25%;"></div>
-                    </div>
-
-                    <div class="skills-data">
-                        <div class="skills-names">
-                            <i class='bx bxl-python skills-icon'></i>
-                            <span class="skills-name">Python</span>
-                        </div>
-                        <span class="skills-percentage">25%</span>
-                        <div class="skills-bar" style="width: 25%;"></div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Columna derecha: Programas de Diseño -->
-            <div class="habilidades-column">
-                <div class="habilidades-column-title">
-                    <i class="fa-solid fa-pen-nib"></i>
-                    <h3>Programas</h3>
-                </div>
-
-                <div class="badges-container">
-
-                    <div class="badge-card">
-                        <i class="fa-solid fa-pen-ruler"></i>
-                        <span>Procreate</span>
-                    </div>
-
-                    <div class="badge-card">
-                        <i class="fa-solid fa-bezier-curve"></i>
-                        <span>Adobe Illustrator</span>
-                    </div>
-
-                    <div class="badge-card">
+                <!-- Columna derecha: Programas de Diseño -->
+                <div class="habilidades-column">
+                    <div class="habilidades-column-title">
                         <i class="fa-solid fa-pen-nib"></i>
-                        <span>Clip Studio Paint</span>
+                        <h3>Programas</h3>
                     </div>
 
-                    <div class="badge-card">
-                        <i class="fa-solid fa-image"></i>
-                        <span>Adobe Photoshop</span>
-                    </div>
+                    <div class="badges-container">
 
-                    <div class="badge-card">
-                        <i class="fa-solid fa-paintbrush"></i>
-                        <span>Toon Boom Harmony</span>
-                    </div>
-
-                    <div class="badge-card">
-                        <i class="fa-solid fa-vector-square"></i>
-                        <span>Figma</span>
-                    </div>
-
-                    <div class="badge-card">
-                        <i class="fa-solid fa-file-code"></i>
-                        <span>Visual Studio Code</span>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    </div>
-
-    </section>
-
-    <!-- seccion de experiencia laboral -->
-
-    <section id="experiencia" class="experiencia">
-
-        <h2 class="section-title">Experiencia</h2>
-
-        <div class="timeline-container">
-
-            <!-- Columna izquierda: Formación y Educación -->
-            <div class="timeline-column">
-
-                <!-- Formación -->
-                <div class="timeline-column-title">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h3>Formación</h3>
-                </div>
-
-                <div class="timeline-line">
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <p class="timeline-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                Actualmente | Grupo Asesor de Jóvenes Goyn Barranquilla
-                            </p>
-                            <h4>Voluntaria</h4>
-                            <p>Participación en el diseño e implementación de las actividades de GOYN: Planeación
-                                estratégica, grupos de trabajo, movilización y promoción de iniciativas a favor de
-                                los jóvenes en barrios de Barranquilla.</p>
+                        <div class="badge-card">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                            <span>Procreate</span>
                         </div>
-                    </div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <p class="timeline-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                7 meses | Team Toon Studio
-                            </p>
-                            <h4>Práctica de Animación 2D</h4>
-                            <p>Ilustración digital, Animación 2D, Storyboard, Diseño de escenario, Creación de
-                                personajes y Manejo de Toon Boom Harmony.</p>
+                        <div class="badge-card">
+                            <i class="fa-solid fa-bezier-curve"></i>
+                            <span>Adobe Illustrator</span>
                         </div>
-                    </div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <p class="timeline-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                5 años | Universidad Católica Cecilio Acosta
-                            </p>
-                            <h4>Licenciatura en Artes Mención: Diseño Gráfico</h4>
-                            <p>Manejo de Adobe Creative Cloud.</p>
+                        <div class="badge-card">
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <span>Clip Studio Paint</span>
                         </div>
-                    </div>
 
-                </div>
-            </div>
-
-            <!-- Columna derecha: Experiencia Laboral -->
-            <div class="timeline-column">
-
-                <div class="timeline-column-title">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <h3>Experiencia Laboral</h3>
-                </div>
-
-                <div class="timeline-line">
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <p class="timeline-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                Actualmente
-                            </p>
-                            <h4>Diseñadora Gráfica e Ilustradora Freelance</h4>
-                            <p>Desarrollo de proyectos de diseño gráfico e ilustración para emprendedores y marcas
-                                personales. Especializada en Diseño de presentación, Ilustración digital, Diseño de
-                                redes sociales, Medios Impresos y Animación 2D</p>
+                        <div class="badge-card">
+                            <i class="fa-solid fa-image"></i>
+                            <span>Adobe Photoshop</span>
                         </div>
-                    </div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <p class="timeline-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                2 años | Corporación Universitaria Americana
-                            </p>
-                            <h4>Diseñadora Gráfica Junior</h4>
-                            <p>Diseño de Redes Sociales, Afiche,
-                                Pendones, Banner web, Retoque digital y Medios impresos.</p>
+                        <div class="badge-card">
+                            <i class="fa-solid fa-paintbrush"></i>
+                            <span>Toon Boom Harmony</span>
                         </div>
-                    </div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <p class="timeline-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                5 meses | Crea S.A. Publicidad
-                            </p>
-                            <h4>Práctica de Diseño Gráfico</h4>
-                            <p>Diseño de Redes Sociales y Retoque digital.</p>
+                        <div class="badge-card">
+                            <i class="fa-solid fa-vector-square"></i>
+                            <span>Figma</span>
                         </div>
-                    </div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-card">
-                            <p class="timeline-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                3 meses | Centro de Formación "Padre Joaquín Fe y Alegría"
-                            </p>
-                            <h4>Práctica de Diseño Gráfico</h4>
-                            <p>Folletos, Diseño
-                                editorial, Infografía y Diseño de portada.</p>
+                        <div class="badge-card">
+                            <i class="fa-solid fa-file-code"></i>
+                            <span>Visual Studio Code</span>
                         </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- seccion de experiencia laboral -->
+
+        <section id="experiencia" class="experiencia">
+
+            <h2 class="section-title">Experiencia</h2>
+
+            <div class="timeline-container">
+
+                <!-- Columna izquierda: Formación y Educación -->
+                <div class="timeline-column">
+
+                    <!-- Formación -->
+                    <div class="timeline-column-title">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>Formación</h3>
                     </div>
 
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="timeline-line">
 
-    <!-- Section de Proyectos -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <p class="timeline-date">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    Actualmente | Grupo Asesor de Jóvenes Goyn Barranquilla
+                                </p>
+                                <h4>Voluntaria</h4>
+                                <p>Participación en el diseño e implementación de las actividades de GOYN: Planeación
+                                    estratégica, grupos de trabajo, movilización y promoción de iniciativas a favor de
+                                    los jóvenes en barrios de Barranquilla.</p>
+                            </div>
+                        </div>
 
-    <section id="proyectos" class="proyectos">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <p class="timeline-date">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    7 meses | Team Toon Studio
+                                </p>
+                                <h4>Práctica de Animación 2D</h4>
+                                <p>Ilustración digital, Animación 2D, Storyboard, Diseño de escenario, Creación de
+                                    personajes y Manejo de Toon Boom Harmony.</p>
+                            </div>
+                        </div>
 
-        <h2 class="section-title">Proyectos</h2>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <p class="timeline-date">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    5 años | Universidad Católica Cecilio Acosta
+                                </p>
+                                <h4>Licenciatura en Artes Mención: Diseño Gráfico</h4>
+                                <p>Manejo de Adobe Creative Cloud.</p>
+                            </div>
+                        </div>
 
-        <div class="proyectos-grid">
-
-            <div class="proyectos-card">
-                <img src="/public/img/tiger.png" alt="PawAdopt">
-                <h3>PawAdopt</h3>
-                <p>Creación de la página del galeria de adopción.</p>
-                <div class="btn-group">
-                    <a href="views/mascotas.html" class="btn">Ver proyecto</a>
-                    <a href="https://github.com/marielsa-design/portafolio" class="btn">Código de fuente</a>
-                </div>
-            </div>
-
-            <div class="proyectos-card">
-                <img src="/public/img/tiger.png" alt="Proyecto 2">
-                <h3>Porgrama Liderazgo para la Equidad</h3>
-                <p>Diseño de diapositiva de ELP de voluntario de GOYN</p>
-                <div class="btn-group">
-                    <a href="https://drive.google.com/file/d/1IlhRGjI_kRWLED71V5-7zbnV48dQ87ke/view?usp=drive_link"
-                        class="btn">Ver proyecto</a>
-                </div>
-            </div>
-
-            <div class="proyectos-card">
-                <img src="/public/img/tiger.png" alt="Proyecto 3">
-                <h3>Inventario Riwi</h3>
-                <p>Es el programa de una aplicación de consola para el manejo de los productos de un inventario.</p>
-                <div class="btn-group">
-                    <a href="https://github.com/marielsa-design/Inventario-Riwi.git" class="btn">Código de fuente</a>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Contacto -->
-
-    <section id="contacto" class="contacto">
-
-        <h2 class="section-title">Contacto</h2>
-
-        <div class="contacto-container">
-
-            <!-- Tarjetas de contacto izquierda -->
-
-            <div class="contacto-info">
-
-                <div class="contacto-card">
-                    <i class="fa-solid fa-envelope"></i>
-                    <h3>Correo</h3>
-                    <p>marielsa.milagro@gmail.com</p>
-                    <a href="mailto:marielsa.milagro@gmail.com" class="contacto-link">
-                        Escribeme <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    </div>
                 </div>
 
-                <div class="contacto-card">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <h3>WhatsApp</h3>
-                    <p>+57 322 7111205</p>
-                    <a href="https://wa.me/573227111205" target="_blank" rel="noopener noreferrer"
-                        class="contacto-link">
-                        Escribeme <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                <!-- Columna derecha: Experiencia Laboral -->
+                <div class="timeline-column">
+
+                    <div class="timeline-column-title">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h3>Experiencia Laboral</h3>
+                    </div>
+
+                    <div class="timeline-line">
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <p class="timeline-date">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    Actualmente
+                                </p>
+                                <h4>Diseñadora Gráfica e Ilustradora Freelance</h4>
+                                <p>Desarrollo de proyectos de diseño gráfico e ilustración para emprendedores y marcas
+                                    personales. Especializada en Diseño de presentación, Ilustración digital, Diseño de
+                                    redes sociales, Medios Impresos y Animación 2D</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <p class="timeline-date">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    2 años | Corporación Universitaria Americana
+                                </p>
+                                <h4>Diseñadora Gráfica Junior</h4>
+                                <p>Diseño de Redes Sociales, Afiche,
+                                    Pendones, Banner web, Retoque digital y Medios impresos.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <p class="timeline-date">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    5 meses | Crea S.A. Publicidad
+                                </p>
+                                <h4>Práctica de Diseño Gráfico</h4>
+                                <p>Diseño de Redes Sociales y Retoque digital.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <p class="timeline-date">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    3 meses | Centro de Formación "Padre Joaquín Fe y Alegría"
+                                </p>
+                                <h4>Práctica de Diseño Gráfico</h4>
+                                <p>Folletos, Diseño
+                                    editorial, Infografía y Diseño de portada.</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Formulario derecha -->
+        <!-- Section de Proyectos -->
 
-            <div class="contacto-form">
+        <section id="proyectos" class="proyectos">
 
-                <input type="text" class="form-input" placeholder="Nombre completo">
-                <input type="email" class="form-input" placeholder="Correo electrónico">
-                <input type="tel" class="form-input" placeholder="Número de teléfono">
-                <textarea class="form-input form-textarea" placeholder="Tu mensaje"></textarea>
+            <h2 class="section-title">Proyectos</h2>
 
-                <button class="form-btn">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <span>Enviar mensaje</span>
-                </button>
+            <div class="proyectos-grid">
+
+                <div class="proyectos-card">
+                    <img src="/public/img/PawAdopt.png" alt="PawAdopt">
+                    <h3>PawAdopt</h3>
+                    <p>Creación de la página del galeria de adopción.</p>
+                    <div class="btn-group">
+                        <a href="views/mascotas.html" class="btn">Ver proyecto</a>
+                        <a href="https://github.com/marielsa-design/portafolio" class="btn">Código de fuente</a>
+                    </div>
+                </div>
+
+                <div class="proyectos-card">
+                    <img src="/public/img/Liderazgo.png" alt="Proyecto 2">
+                    <h3>Porgrama Liderazgo para la Equidad</h3>
+                    <p>Diseño de diapositiva de ELP de voluntario de GOYN</p>
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1IlhRGjI_kRWLED71V5-7zbnV48dQ87ke/view?usp=drive_link"
+                            class="btn">Ver proyecto</a>
+                    </div>
+                </div>
+
+                <div class="proyectos-card">
+                    <img src="/public/img/Python.png" alt="Proyecto 3">
+                    <h3>Inventario Riwi</h3>
+                    <p>Es el programa de una aplicación de consola para el manejo de los productos de un inventario.</p>
+                    <div class="btn-group">
+                        <a href="https://github.com/marielsa-design/Inventario-Riwi.git" class="btn">Código de
+                            fuente</a>
+                    </div>
+                </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+        <!-- Contacto -->
 
+        <section id="contacto" class="contacto">
+
+            <h2 class="section-title">Contacto</h2>
+
+            <div class="contacto-container">
+
+                <!-- Tarjetas de contacto izquierda -->
+
+                <div class="contacto-info">
+
+                    <div class="contacto-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Correo</h3>
+                        <p>marielsa.milagro@gmail.com</p>
+                        <a href="mailto:marielsa.milagro@gmail.com" class="contacto-link">
+                            Escribeme <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="contacto-card">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <h3>WhatsApp</h3>
+                        <p>+57 322 7111205</p>
+                        <a href="https://wa.me/573227111205" target="_blank" rel="noopener noreferrer"
+                            class="contacto-link">
+                            Escribeme <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulario derecha -->
+
+                <div class="contacto-form">
+
+                    <input type="text" class="form-input" placeholder="Nombre completo">
+                    <input type="email" class="form-input" placeholder="Correo electrónico">
+                    <input type="tel" class="form-input" placeholder="Número de teléfono">
+                    <textarea class="form-input form-textarea" placeholder="Tu mensaje"></textarea>
+
+                    <button class="form-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Enviar mensaje</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
     <!-- Footer de la página del portafolio personal -->
 
     <footer class="footer">

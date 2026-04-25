@@ -1,5 +1,3 @@
-@import url(style.css);
-
 /* ── Responsive ── */
 
 @media (max-width: 1280px) {
@@ -92,10 +90,6 @@
         grid-template-columns: 1fr;
     }
 
-    .input-wrapper {
-        grid-template-columns: 1fr;
-    }
-
     .footer {
         flex-direction: column;
         height: auto;
@@ -134,10 +128,6 @@
 
     .menu-toggle:checked~.nav-links {
         display: flex;
-    }
-
-    .menu-toggle:checked~.menu-icon .fa-bars::before {
-        content: "\f00d";
     }
 
     .sobre-mi-img {

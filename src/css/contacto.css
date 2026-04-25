@@ -1,5 +1,3 @@
-@import url(style.css);
-
 /* ── Contacto ── */
 
 .contacto {
@@ -16,8 +14,6 @@
     width: 100%;
     max-width: 1000px;
 }
-
-/* ── Tarjetas ── */
 
 .contacto-info {
     display: flex;
@@ -74,8 +70,6 @@
 .contacto-link:hover {
     gap: 0.8rem;
 }
-
-/* ── Formulario ── */
 
 .contacto-form {
     display: flex;

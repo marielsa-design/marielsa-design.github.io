@@ -1,34 +1,3 @@
-@import url(style.css);
-
-/* ── Footer ── */
-
-.footer {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.btn {
-    padding: 0.6rem 1.4rem;
-    border-radius: 3rem;
-    border: 2px solid var(--text-color);
-    color: var(--text-color);
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: 0.3s ease-in-out;
-}
-
-.proyectos-card:hover .btn {
-    border: 2px solid var(--background-color);
-    color: var(--background-color);
-}
-
-.proyectos-card:hover .btn:hover {
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
 /* ── Footer ── */
 
 .footer {
